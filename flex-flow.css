@@ -1,0 +1,56 @@
+/*
+Like the shorthand flex property, the shorthand flex-flow property is used to declare both the flex-wrap and flex-direction properties in one line.
+*/
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 14px;
+}
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  background-color: dodgerblue;
+  display: flex;
+  height: 600px;
+  align-items: center;
+}
+
+.box {
+  background-color: whitesmoke;
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+#row {
+
+}
+
+#row-reverse {
+  /*
+    flex-wrap: wrap;
+  flex-direction: row-reverse;
+  */
+    flex-flow: row-reverse wrap;
+}
+
+#column {
+    /*
+    flex-wrap: wrap;
+  flex-direction: column;
+  */
+  flex-flow: column wrap;
+}
+
+#column-reverse {
+
+}
